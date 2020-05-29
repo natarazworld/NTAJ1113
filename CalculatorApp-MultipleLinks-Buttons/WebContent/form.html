@@ -1,0 +1,28 @@
+
+
+
+<h1 style="color:red;text-align:center">Html to SErvlet :: handling multiple hyperlinks and submit Buttons</h1>
+
+<form action="calcurl"  method="POST">
+   <table border="0"  bgcolor="cyan" align="center">
+       <tr>
+          <td> Value1:: </td>
+          <td> <input type="number"  name="t1" value="0"  placeholder="enter value1"> </td>
+       </tr>
+       <tr>
+          <td> Value2:: </td>
+          <td> <input type="number"  name="t2" value="0"  placeholder="enter value2"> </td>
+       </tr>
+       <tr>
+          <td colspan="2" align="center"><input type="submit" name="s1"  value="add"> <input type="submit" name="s1"  value="sub">
+                                            <input type="submit" name="s1"  value="mul"> <input type="submit" name="s1"  value="div">
+           </td>
+          
+       </tr>
+       <tr>
+            <td> <a href="calcurl?s1=link1">Get current day of the year</a> </td>
+            <td> <a href="calcurl?s1=link2">Get week number of the year</a>
+       </tr>
+   </table>
+</form>
+  
