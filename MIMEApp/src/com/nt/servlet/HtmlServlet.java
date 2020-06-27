@@ -14,17 +14,26 @@ public class  HtmlServlet extends HttpServlet
 		System.out.println("HtmlServlet:: 0-param consturctor");
 	}
 	
+	
+	/*	@Override
+		public void init() throws ServletException {
+		 System.out.println("HtmlServlet.init() no parameter method");
+		 ServletConfig cg=getServletConfig();
+		 System.out.println(cg.getInitParameter("p1")+" from init() method");
+		}*/
+	
+	//private ServletConfig cg;
 	@Override
 	public void init(ServletConfig cg) throws ServletException {
+		//this.cg=cg;
+		//super.init(cg);
 		System.out.println("HtmlServlet::init(-) method");
-		System.out.println("dbuser init param value ::"+cg.getInitParameter("dbuser"));
-		System.out.println("dbpwd init param value ::"+cg.getInitParameter("dbpwd"));
 		System.out.println("p1 init param value ::"+cg.getInitParameter("p1"));
 	}
 	
-	public void service(ServletRequest req,ServletResponse res) throws ServletException,IOException 
+	public void doPost(HttpServletRequest req,HttpServletResponse res) throws ServletException,IOException 
 	{
-		System.out.println("HtmlServlet.service()");
+		System.out.println("HtmlServlet::doPost(-,-)");
 		PrintWriter pw=res.getWriter();
 		res.setContentType("text/html");
 		pw.println("<table align='center' border='1' bgcolor='cyan'>");
