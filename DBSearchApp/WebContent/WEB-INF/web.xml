@@ -2,5 +2,31 @@
        <welcome-file-list>
 	          <welcome-file>search.html </welcome-file>
 	   </welcome-file-list>
-
+	   
+	  <!--  <servlet>
+	       <servlet-name>db</servlet-name>
+	       <servlet-class>com.nt.servlet.EmployeeSearchServlet</servlet-class>
+	        <init-param>
+	            <param-name>driver</param-name>
+	            <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+	        </init-param>
+	           <init-param>
+	            <param-name>url</param-name>
+	            <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+	        </init-param>
+	          <init-param>
+	            <param-name>dbuser</param-name>
+	            <param-value>system</param-value>
+	        </init-param>
+	        <init-param>
+	            <param-name>dbpwd</param-name>
+	            <param-value>manager</param-value>
+	        </init-param>
+	   </servlet>
+	   
+	   <servlet-mapping>
+	       <servlet-name>db</servlet-name>
+	       <url-pattern>/dburl</url-pattern>
+	   </servlet-mapping>
+ -->
 </web-app>
