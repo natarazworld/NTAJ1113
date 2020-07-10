@@ -1,0 +1,7 @@
+<web-app>
+  <display-name>DBPoolApp-PooledJDBCConnection</display-name>
+  <welcome-file-list>
+    <welcome-file>employee_register.html</welcome-file>
+  
+  </welcome-file-list>
+</web-app>
