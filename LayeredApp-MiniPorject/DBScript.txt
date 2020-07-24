@@ -1,0 +1,22 @@
+Generated code using SQL developer
+================================
+CREATE TABLE "SYSTEM"."LAYERED_STUDENT" 
+   (	"SNO" NUMBER(5,0) NOT NULL ENABLE, 
+	"SNAME" VARCHAR2(20 BYTE), 
+	"SADD" VARCHAR2(20 BYTE), 
+	"TOTAL" NUMBER(10,0), 
+	"AVG" FLOAT(10), 
+	"RESULT" VARCHAR2(20 BYTE), 
+	 CONSTRAINT "LAYERED_STUDENT_PK" PRIMARY KEY ("SNO"));
+	 ---------------------------------
+	  CREATE SEQUENCE  "SYSTEM"."SNO_SEQ1"  MINVALUE 1 MAXVALUE 1000 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+	  ========================================================================================
+	  Form SQL prompt
+	  ============
+	  SQL> create table layered_student1(sno number(5) primary key,sname varchar2(15),sadd varchar2(15),total number(10),avg float, result varchar2(10));
+
+Table created.
+
+SQL> create sequence sno_seq2 start with 1 increment by 1 ;
+
+Sequence created.

@@ -1,0 +1,23 @@
+
+plugins {
+    id 'war'
+}
+
+repositories {
+     mavenCentral()
+}
+
+dependencies {
+  // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+  implementation group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+  // https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6
+implementation group: 'com.oracle.database.jdbc', name: 'ojdbc6', version: '11.2.0.4'
+
+// https://mvnrepository.com/artifact/commons-io/commons-io
+implementation group: 'commons-io', name: 'commons-io', version: '2.7'
+
+  
+  
+ 
+   
+}
