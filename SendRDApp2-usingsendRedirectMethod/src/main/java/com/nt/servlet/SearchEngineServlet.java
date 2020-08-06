@@ -1,6 +1,8 @@
 package com.nt.servlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,6 +34,8 @@ public class SearchEngineServlet extends HttpServlet {
 		   url="https://duckduckgo.com/?q="+ss;
 		 //perform sendRedirection
 	   res.sendRedirect(url);
+	   RequestDispatcher rd=req.getRequestDispatcher("/hello.html");
+	   rd.include(req,res);
 		
 	}
 
