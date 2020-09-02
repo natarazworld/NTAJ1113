@@ -4,4 +4,21 @@
   <welcome-file-list>
         <welcome-file>second.jsp</welcome-file>
   </welcome-file-list>
+  <context-param>
+     <param-name>dbuser</param-name>
+     <param-value>scott</param-value>
+  </context-param>
+  <servlet>
+      <servlet-name>t</servlet-name>
+      <jsp-file>/test.jsp</jsp-file>
+      <init-param>
+        <param-name>dbuser</param-name>
+        <param-value>system</param-value>
+      </init-param>
+  </servlet>
+    <servlet-mapping>
+        <servlet-name>t</servlet-name>
+        <url-pattern>/testurl</url-pattern>
+    </servlet-mapping>
+  
 </web-app>
