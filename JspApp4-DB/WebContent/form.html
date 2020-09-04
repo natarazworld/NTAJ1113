@@ -1,0 +1,28 @@
+
+
+
+<h1 style="color:red;text-align:center"> Html to jsp to Db s/w communication </h1>
+
+
+<form  action="bankurl"  method="post">
+    <table border="1" align="center" bgcolor="cyan">
+        <tr>
+           <th> Holder name::  </th>
+           <td><input type="text" name="holder">  </td>
+        </tr>
+        <tr>
+           <th> Address::  </th>
+           <td><input type="text" name="addrs">  </td>
+        </tr>
+        <tr>
+           <th> InitialAmount  </th>
+           <td><input type="range" min="500"   max="10000000" name="initialBalance" translate="yes"/>  </td>
+        </tr>
+        <tr>
+           <td> <button name="type" type="submit"  value="submit">Submit</button>  </td>
+           <td> <button type="reset"> Reset</button>  </td>
+        </tr>
+    </table>
+</form>
+ <br><br>
+     <a href="bankurl?type=link">Get All  Bank account details</a>
