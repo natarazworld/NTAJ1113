@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>JspApp7-GlobalErrorPages</display-name>
+  
+    <error-page>
+       <error-code>404</error-code>
+       <location>/404.jsp</location>
+    </error-page>
+    
+     <error-page>
+       <error-code>500</error-code>
+       <location>/500.jsp</location>
+    </error-page>
+    
+    <!-- <error-page>
+       <exception-type>java.lang.Exception</exception-type>
+       <location>/err.jsp</location>
+    </error-page> -->
+       
+</web-app>

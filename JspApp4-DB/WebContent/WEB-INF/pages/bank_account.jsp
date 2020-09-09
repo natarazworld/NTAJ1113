@@ -1,4 +1,4 @@
-<%@page import="java.sql.*"%>
+<%@page import="java.sql.*" errorPage="error.jsp"%>
 
 <%!private Connection con;
 	private PreparedStatement ps1 = null, ps2 = null;
