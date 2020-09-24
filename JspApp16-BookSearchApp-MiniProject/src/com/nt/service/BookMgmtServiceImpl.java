@@ -21,7 +21,7 @@ public class BookMgmtServiceImpl implements IBookMgmtService {
 		
 		//use dAO
 		listBO=dao.findBooksByCategory(category);
-		//convert listOb to listBO
+		//convert listBO to listDTO
 		listBO.forEach(bo->{
 			//convert each bo to each dto
 			BookDTO dto=new BookDTO();
