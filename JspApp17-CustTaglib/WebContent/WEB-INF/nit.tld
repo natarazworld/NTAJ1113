@@ -1,0 +1,42 @@
+<taglib version="2.0" xmlns="http://java.sun.com/xml/j2ee"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+  <tlib-version>2.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>nit</short-name>
+  <uri>https://nareshit.com/custom/tags</uri>
+  <tag>
+    <name>label</name>
+    <tag-class>com.nt.tags.LabelTag</tag-class>
+    <body-content>EMPTY</body-content>
+    <attribute >
+      <name>msg</name>
+      <required>false</required>  <!-- optional attribute -->
+    </attribute>
+  </tag>
+  
+   <tag>
+    <name>prime</name>
+    <tag-class>com.nt.tags.PrimeTag</tag-class>
+    <body-content>EMPTY</body-content>
+    <attribute >
+      <name>n</name>
+      <required>false</required>  <!-- optional attribute -->
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>display</name>
+    <tag-class>com.nt.tags.DisplayTag</tag-class>
+    <body-content>JSP</body-content>
+    <attribute >
+      <name>font</name>
+      <required>true</required>  <!-- mandatory attribute -->
+    </attribute>
+      <attribute >
+      <name>size</name>
+      <required>false</required>  <!-- optional attribute -->
+    </attribute>
+  </tag>
+  
+</taglib>

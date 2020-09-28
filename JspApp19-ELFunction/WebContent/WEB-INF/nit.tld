@@ -1,0 +1,14 @@
+	<taglib xmlns="http://java.sun.com/xml/ns/j2ee" 
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"   version="2.1"> 
+	  
+	  <tlib-version>2.0</tlib-version>
+	  <uri>http://nit.com/el</uri>
+
+	  <function>
+	      <name>sayHello</name>
+	      <function-class>com.nt.el.WishMessageGenerator</function-class>
+	      <function-signature>java.lang.String generateMessage(java.lang.String)</function-signature>
+	  </function>  
+
+	</taglib> 

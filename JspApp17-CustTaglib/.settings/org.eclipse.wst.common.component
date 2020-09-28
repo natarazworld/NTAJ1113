@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="JspApp17-CustTaglib">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="JspApp17-CustTaglib"/>
+        <property name="java-output-path" value="/JspApp17-CustTaglib/build/classes"/>
+    </wb-module>
+</project-modules>
