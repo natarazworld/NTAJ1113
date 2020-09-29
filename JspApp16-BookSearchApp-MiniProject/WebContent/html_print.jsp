@@ -1,6 +1,39 @@
-<%@ page  import="com.nt.dto.BookDTO,java.util.*"%>
+<%@page  isELIgnored="false" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core"   prefix="c" %>
+<jsp:include page="header.jsp"/>
+   <br><br> 
+<c:choose>
+   <c:when test="${booksInfo ne null  && !empty booksInfo}">
+     <center> <b> Books belonging to  :::: ${param.category}  </b> </center><br>
+      <table border="1"  align="center" bgcolor="cyan">
+        <tr>
+          <th>SerialNo </th> <th>BookId </th> <th>BookName </th><th>Author </th><th>Publisher </th><th>Price </th> <th>status </th> <th>category </th> 
+        </tr>
+        <c:forEach var="dto"  items="${booksInfo}">
+            <tr>
+            	     <td>${dto.serialNo}</td>
+            	     <td>${dto.bookId} </td>
+            	     <td>${dto.bookName}</td>
+            	     <td>${dto.author} </td>
+            	     <td>${dto.publisher}</td>
+            	     <td>${dto.price}</td>
+            	     <td>${dto.status}</td>
+            	     <td>${dto.category} </td>
+            	  </tr>
+        </c:forEach>
+        </table>
+   </c:when>
+    <c:otherwise>
+             <h1 style="color:red;text-align:center">No Books found to display </h1>
+    </c:otherwise>
+</c:choose>
+          <script language="JavaScript" src="js/search.js"/>
+           <a href="JavaScript:doPrint()">print</a>
+           <br>
+           <br>
+           <%@include file="footer.html" %> 
 
-
+<%-- <%@ page  import="com.nt.dto.BookDTO,java.util.*"%>
  <jsp:include page="header.jsp"/>
    <br><br> 
 <%
@@ -45,6 +78,6 @@
            <br>
            <%@include file="footer.html" %> 
       
-        
+ --%>        
         
 	   
